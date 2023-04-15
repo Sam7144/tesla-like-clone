@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 //import Section from "./Section";
-import Fade from 'react-reveal'
 function HomeScreen({data}) {
   return (
     
@@ -10,14 +9,14 @@ function HomeScreen({data}) {
           {data.map((props)=>(
             <div key={props.name}>
               <Wrap bgImage={props.image}>
-             <Fade bottom>
+             
               <ItemText>
                 <h1>{props.name}</h1>
                <p>{props.description}</p>
               </ItemText>
-              </Fade>
+              
              <Buttons>
-              <Fade bottom>
+              
                 <ButtonGroup>
                   <ButtonLeft>{props.leftBtn}</ButtonLeft>
                   {props.RightBtn&&
@@ -28,7 +27,7 @@ function HomeScreen({data}) {
                     </ButtonRight>
                   }
                 </ButtonGroup>
-           </Fade>
+           
                 <DownArrow src="./images/down-arrow.svg" alt='arrow-down'/>
              </Buttons>
             </Wrap>

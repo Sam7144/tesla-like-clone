@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal";
 import Image from "next/image";
 function modelst({ datta }) {
   console.log(datta);
